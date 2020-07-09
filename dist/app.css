@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 .wrapper {
   width: 100%;
   height: 100vh;
@@ -12,29 +16,52 @@
 .container {
   width: 1024px;
   margin: 0 auto;
-  height: 100%;
-  background-color: lightblue;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 header {
   height: 100px;
   width: 100%;
+  color: #58402c;
+  line-height: 100px;
+  padding: 0 20px;
+  border-bottom: 2px solid #58402c;
 }
 
 header .logo {
   float: left;
   height: 100%;
-  width: 25%;
+  width: 50%;
 }
 
 header .logo img {
   width: 150px;
+  vertical-align: middle;
 }
 
-header .nav {
+header nav {
   float: left;
   height: 100%;
   text-align: right;
-  width: 75%;
+  width: 50%;
+}
+
+header nav .menu li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+header nav .menu li a.sign-up {
+  padding: 20px 10px;
+  background-color: #5b70aa;
+  color: #2c4791;
 }
 
