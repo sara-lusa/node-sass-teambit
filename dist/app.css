@@ -18,10 +18,6 @@ body {
   margin: 0 auto;
 }
 
-img {
-  width: 100%;
-}
-
 ul {
   list-style-type: none;
 }
@@ -73,16 +69,57 @@ main {
   width: 100%;
 }
 
+.before {
+  background-color: #fee7d1;
+  color: #58402c;
+  text-align: center;
+  padding: 60px 0;
+}
+
+.before h2 {
+  margin-bottom: 40px;
+}
+
+.before .before-img {
+  width: 100%;
+}
+
+.before .before-img .left,
+.before .before-img .center,
+.before .before-img .right {
+  float: left;
+  height: 100%;
+  width: calc(100% / 3);
+  height: 300px;
+  text-align: center;
+}
+
+.before .before-img .left img,
+.before .before-img .center img,
+.before .before-img .right img {
+  height: 60%;
+  display: block;
+  margin: 0 auto;
+}
+
+.before img:last-child {
+  width: 50%;
+}
+
 .jumbotron {
   height: 600px;
   color: #58402c;
   padding: 60px 0;
 }
 
-.jumbotron > div {
+.jumbotron .container > div {
   width: 55%;
   float: left;
   height: 100%;
+}
+
+.jumbotron .jumbo-img img {
+  width: 100%;
 }
 
 .jumbotron div.jumbo-intro {

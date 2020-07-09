@@ -2,34 +2,36 @@ main {
   width: 100%;
 }
 
-.jumbotron {
-  height: 600px;
+.before {
+  background-color: $secondary_color;
   color: $primary_color;
+  text-align: center;
   @include section_main;
 
-  & > div {
-    width: 55%;
-    @include float_left;
+  h2 {
+    margin-bottom: 40px;
   }
 
-  div.jumbo-intro {
-    width: 45%;
+  .before-img {
+    width: 100%;
 
-    h1 {
-      font-size: 45px;
-      margin-bottom: 20px;
-      line-height: 65px;
+    .left, .center,
+    .right {
+      @include float_left;
+      width: calc(100% / 3);
+      height: 300px;
+      text-align: center;
+
+      & img {
+        height: 60%;
+        display: block;
+        margin: 0 auto;
+      }
     }
 
-    p.subtitle {
-      font-size: 20px;
-      line-height: 30px;
-    }
-
-    .btn {
-      @include btn;
-    }
   }
 
-
+   img:last-child {
+    width: 50%;
+  }
 }
