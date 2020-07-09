@@ -7,4 +7,12 @@
   padding: 10px 15px;
   background-color: $third_color;
   color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  margin-top: 45px;
+  margin-bottom: 20px;
+}
+
+@mixin section_main {
+  padding: 60px 0;
 }

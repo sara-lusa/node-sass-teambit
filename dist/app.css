@@ -18,6 +18,10 @@ body {
   margin: 0 auto;
 }
 
+img {
+  width: 100%;
+}
+
 ul {
   list-style-type: none;
 }
@@ -63,5 +67,46 @@ header nav .menu li a.sign-up {
   padding: 20px 10px;
   background-color: #5b70aa;
   color: #2c4791;
+}
+
+main {
+  width: 100%;
+}
+
+.jumbotron {
+  height: 600px;
+  color: #58402c;
+  padding: 60px 0;
+}
+
+.jumbotron > div {
+  width: 55%;
+  float: left;
+  height: 100%;
+}
+
+.jumbotron div.jumbo-intro {
+  width: 45%;
+}
+
+.jumbotron div.jumbo-intro h1 {
+  font-size: 45px;
+  margin-bottom: 20px;
+  line-height: 65px;
+}
+
+.jumbotron div.jumbo-intro p.subtitle {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.jumbotron div.jumbo-intro .btn {
+  padding: 10px 15px;
+  background-color: #2c4791;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  margin-top: 45px;
+  margin-bottom: 20px;
 }
 

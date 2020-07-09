@@ -1,0 +1,35 @@
+main {
+  width: 100%;
+}
+
+.jumbotron {
+  height: 600px;
+  color: $primary_color;
+  @include section_main;
+
+  & > div {
+    width: 55%;
+    @include float_left;
+  }
+
+  div.jumbo-intro {
+    width: 45%;
+
+    h1 {
+      font-size: 45px;
+      margin-bottom: 20px;
+      line-height: 65px;
+    }
+
+    p.subtitle {
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    .btn {
+      @include btn;
+    }
+  }
+
+
+}
