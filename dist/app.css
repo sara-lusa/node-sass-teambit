@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+}
+
+.container {
+  width: 1024px;
+  margin: 0 auto;
+  height: 100%;
+  background-color: lightblue;
+}
+
+header {
+  height: 100px;
+  width: 100%;
+}
+
+header .logo {
+  float: left;
+  height: 100%;
+  width: 25%;
+}
+
+header .logo img {
+  width: 150px;
+}
+
+header .nav {
+  float: left;
+  height: 100%;
+  text-align: right;
+  width: 75%;
+}
+

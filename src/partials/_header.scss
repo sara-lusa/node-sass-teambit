@@ -1,0 +1,19 @@
+header {
+  height: $header_height;
+  width: 100%;
+
+  .logo {
+    @include float_left;
+    width: $header_left_element_width;
+
+    img {
+      width: 150px;
+    }
+  }
+
+  .nav {
+    @include float_left;
+    text-align: right;
+    width: $header_right_element_width;
+  }
+}
