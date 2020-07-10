@@ -2,36 +2,95 @@ main {
   width: 100%;
 }
 
-.before {
+.before, .after {
   background-color: $secondary_color;
-  color: $primary_color;
   text-align: center;
   @include section_main;
 
-  h2 {
-    margin-bottom: 40px;
+  .container {
+    border-bottom: 1px solid $primary_color;
+
+    h2 {
+      @include h2;
+    }
+
+    .before-img {
+      width: 100%;
+
+      .left, .center,
+      .right {
+        @include float_left;
+        width: calc(100% / 3);
+        height: 300px;
+        text-align: center;
+
+        & img {
+          height: 55%;
+          display: block;
+          margin: 0 auto 30px auto;
+        }
+      }
+
+    }
+
+     img.bef-aft {
+      width: 40%;
+      margin-bottom: 150px;
+    }
   }
+}
 
-  .before-img {
-    width: 100%;
+.after {
+  .container {
+    border: none;
 
-    .left, .center,
-    .right {
-      @include float_left;
-      width: calc(100% / 3);
-      height: 300px;
-      text-align: center;
+  }
+}
 
-      & img {
-        height: 60%;
-        display: block;
-        margin: 0 auto;
+.explanations {
+  @include section_main;
+
+  .box {
+    @include display_flex;
+
+    h2 {
+      @include h2;
+      line-height: 50px;
+    }
+
+    &.left {
+      flex-direction: row;
+    }
+
+    &.right {
+      flex-direction: row-reverse;
+    }
+
+    .img {
+      width: 50%;
+
+      img {
+        width: 100%;
       }
     }
 
-  }
+    .info {
+      width: 25%;
 
-   img:last-child {
-    width: 50%;
+      img {
+        height: 30%;
+        display: block;
+        margin-top: 20px;
+      }
+
+      p {
+        @include subtitle;
+        margin-bottom: 20px;
+      }
+
+      a {
+        @include blue_link;
+      }
+    }
   }
 }

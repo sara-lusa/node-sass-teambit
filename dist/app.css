@@ -69,24 +69,36 @@ main {
   width: 100%;
 }
 
-.before {
+.before,
+.after {
   background-color: #fee7d1;
-  color: #58402c;
   text-align: center;
   padding: 60px 0;
+  color: #58402c;
 }
 
-.before h2 {
+.before .container,
+.after .container {
+  border-bottom: 1px solid #58402c;
+}
+
+.before .container h2,
+.after .container h2 {
   margin-bottom: 40px;
+  font-size: 30px;
 }
 
-.before .before-img {
+.before .container .before-img,
+.after .container .before-img {
   width: 100%;
 }
 
-.before .before-img .left,
-.before .before-img .center,
-.before .before-img .right {
+.before .container .before-img .left,
+.before .container .before-img .center,
+.before .container .before-img .right,
+.after .container .before-img .left,
+.after .container .before-img .center,
+.after .container .before-img .right {
   float: left;
   height: 100%;
   width: calc(100% / 3);
@@ -94,22 +106,86 @@ main {
   text-align: center;
 }
 
-.before .before-img .left img,
-.before .before-img .center img,
-.before .before-img .right img {
-  height: 60%;
+.before .container .before-img .left img,
+.before .container .before-img .center img,
+.before .container .before-img .right img,
+.after .container .before-img .left img,
+.after .container .before-img .center img,
+.after .container .before-img .right img {
+  height: 55%;
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 30px auto;
 }
 
-.before img:last-child {
+.before .container img.bef-aft,
+.after .container img.bef-aft {
+  width: 40%;
+  margin-bottom: 150px;
+}
+
+.after .container {
+  border: none;
+}
+
+.explanations {
+  padding: 60px 0;
+  color: #58402c;
+}
+
+.explanations .box {
+  display: flex;
+}
+
+.explanations .box h2 {
+  margin-bottom: 40px;
+  font-size: 30px;
+  line-height: 50px;
+}
+
+.explanations .box.left {
+  flex-direction: row;
+}
+
+.explanations .box.right {
+  flex-direction: row-reverse;
+}
+
+.explanations .box .img {
   width: 50%;
+}
+
+.explanations .box .img img {
+  width: 100%;
+}
+
+.explanations .box .info {
+  width: 25%;
+}
+
+.explanations .box .info img {
+  height: 30%;
+  display: block;
+  margin-top: 20px;
+}
+
+.explanations .box .info p {
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+.explanations .box .info a {
+  color: #2c4791;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 20px 0;
 }
 
 .jumbotron {
   height: 600px;
   color: #58402c;
   padding: 60px 0;
+  color: #58402c;
 }
 
 .jumbotron .container > div {

@@ -3,6 +3,10 @@
   height: 100%;
 }
 
+@mixin display_flex {
+  display: flex;
+}
+
 @mixin btn {
   padding: 10px 15px;
   background-color: $third_color;
@@ -15,4 +19,22 @@
 
 @mixin section_main {
   padding: 60px 0;
+  color: $primary_color;
+}
+
+@mixin h2 {
+  margin-bottom: 40px;
+  font-size: 30px;
+}
+
+@mixin subtitle {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+@mixin blue_link {
+  color: $third_color;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 20px 0;
 }
