@@ -2,6 +2,10 @@ main {
   width: 100%;
 }
 
+.btn {
+  @include btn;
+}
+
 .before, .after {
   background-color: $secondary_color;
   text-align: center;
@@ -44,5 +48,21 @@ main {
   .container {
     border: none;
 
+  }
+}
+
+.quote-section {
+  background-color: $secondary_color;
+  @include section_main;
+  text-align: center;
+
+  .quote-box {
+    background-color: white;
+    width: 500px;
+    padding: 20px;
+    border: 1px solid $primary_color;
+    margin: 0 auto;
+    border-radius: 10px;
+    text-align: left;
   }
 }
