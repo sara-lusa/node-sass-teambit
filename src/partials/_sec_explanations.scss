@@ -1,0 +1,48 @@
+.explanations {
+  @include section_main;
+
+  .box {
+    @include display_flex;
+    padding: 40px 0;
+
+    h2 {
+      @include h2;
+      line-height: 50px;
+    }
+
+    &.left {
+      flex-direction: row;
+    }
+
+    &.right {
+      flex-direction: row-reverse;
+    }
+
+    .img {
+      width: 50%;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .info {
+      width: 25%;
+
+      img {
+        width: 100%;
+        display: block;
+        margin-top: 20px;
+      }
+
+      p {
+        @include subtitle;
+        margin-bottom: 20px;
+      }
+
+      a {
+        @include blue_link;
+      }
+    }
+  }
+}

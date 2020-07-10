@@ -127,60 +127,6 @@ main {
   border: none;
 }
 
-.explanations {
-  padding: 60px 0;
-  color: #58402c;
-}
-
-.explanations .box {
-  display: flex;
-}
-
-.explanations .box h2 {
-  margin-bottom: 40px;
-  font-size: 30px;
-  line-height: 50px;
-}
-
-.explanations .box.left {
-  flex-direction: row;
-}
-
-.explanations .box.right {
-  flex-direction: row-reverse;
-}
-
-.explanations .box .img {
-  width: 50%;
-}
-
-.explanations .box .img img {
-  width: 100%;
-}
-
-.explanations .box .info {
-  width: 25%;
-}
-
-.explanations .box .info img {
-  height: 30%;
-  display: block;
-  margin-top: 20px;
-}
-
-.explanations .box .info p {
-  font-size: 20px;
-  line-height: 30px;
-  margin-bottom: 20px;
-}
-
-.explanations .box .info a {
-  color: #2c4791;
-  font-size: 20px;
-  font-weight: 400;
-  margin: 20px 0;
-}
-
 .jumbotron {
   height: 600px;
   color: #58402c;
@@ -221,5 +167,60 @@ main {
   border-radius: 10px;
   margin-top: 45px;
   margin-bottom: 20px;
+}
+
+.explanations {
+  padding: 60px 0;
+  color: #58402c;
+}
+
+.explanations .box {
+  display: flex;
+  padding: 40px 0;
+}
+
+.explanations .box h2 {
+  margin-bottom: 40px;
+  font-size: 30px;
+  line-height: 50px;
+}
+
+.explanations .box.left {
+  flex-direction: row;
+}
+
+.explanations .box.right {
+  flex-direction: row-reverse;
+}
+
+.explanations .box .img {
+  width: 50%;
+}
+
+.explanations .box .img img {
+  width: 100%;
+}
+
+.explanations .box .info {
+  width: 25%;
+}
+
+.explanations .box .info img {
+  width: 100%;
+  display: block;
+  margin-top: 20px;
+}
+
+.explanations .box .info p {
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+.explanations .box .info a {
+  color: #2c4791;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 20px 0;
 }
 
