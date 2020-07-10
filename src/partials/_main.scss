@@ -56,13 +56,39 @@ main {
   @include section_main;
   text-align: center;
 
+  h3 {
+    @include main_title;
+  }
+
   .quote-box {
     background-color: white;
     width: 500px;
     padding: 20px;
     border: 1px solid $primary_color;
-    margin: 0 auto;
+    margin: 70px auto 0 auto;
     border-radius: 10px;
     text-align: left;
+
+    .quoter {
+      @include display_flex;
+      margin-top: 20px;
+
+      .photo-profile {
+        img {
+          height: 70px;
+          vertical-align: middle;
+          margin-right: 20px;
+        }
+      }
+
+      .name {
+        margin: auto 0;
+
+        & span:first-child {
+          color: $third_color;
+        }
+      }
+    }
   }
+
 }

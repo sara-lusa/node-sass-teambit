@@ -16,9 +16,7 @@
     width: 45%;
 
     h1 {
-      font-size: 45px;
-      margin-bottom: 20px;
-      line-height: 65px;
+      @include main_title;
     }
 
     p.subtitle {

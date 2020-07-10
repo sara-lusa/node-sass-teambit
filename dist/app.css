@@ -144,14 +144,39 @@ main {
   text-align: center;
 }
 
+.quote-section h3 {
+  font-size: 45px;
+  margin-bottom: 20px;
+  line-height: 65px;
+}
+
 .quote-section .quote-box {
   background-color: white;
   width: 500px;
   padding: 20px;
   border: 1px solid #58402c;
-  margin: 0 auto;
+  margin: 70px auto 0 auto;
   border-radius: 10px;
   text-align: left;
+}
+
+.quote-section .quote-box .quoter {
+  display: flex;
+  margin-top: 20px;
+}
+
+.quote-section .quote-box .quoter .photo-profile img {
+  height: 70px;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+
+.quote-section .quote-box .quoter .name {
+  margin: auto 0;
+}
+
+.quote-section .quote-box .quoter .name span:first-child {
+  color: #2c4791;
 }
 
 .jumbotron {
