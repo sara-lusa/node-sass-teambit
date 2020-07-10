@@ -276,3 +276,41 @@ main {
   margin: 20px 0;
 }
 
+footer {
+  color: #58402c;
+  padding: 40px 0;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .container h2 {
+  margin-bottom: 40px;
+  font-size: 30px;
+}
+
+footer .container li {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+footer .container .logo-info {
+  flex-basis: 20%;
+}
+
+footer .container .logo-info a {
+  color: #2c4791;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 20px 0;
+  font-size: 16px;
+}
+
+footer .container .logo-info span {
+  font-size: 18px;
+  font-weight: 600;
+}
+
