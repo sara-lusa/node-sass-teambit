@@ -4,7 +4,7 @@ footer {
 
   .container {
     @include display_flex;
-    justify-content: space-between;
+    // justify-content: space-between;
 
     h2 {
       @include h2;
@@ -16,7 +16,11 @@ footer {
       margin: 10px 0;
     }
 
-    .logo-info {
+    .info, .menu {
+      margin-right: 35px;
+    }
+
+    .info {
       flex-basis: 20%;
 
       a {

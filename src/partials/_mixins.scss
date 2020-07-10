@@ -7,14 +7,28 @@
   display: flex;
 }
 
+@mixin btn_sign_up {
+  padding: 13px 17px;
+  background-color: $third_color;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid $third_color;
+}
+
 @mixin btn {
   padding: 10px 15px;
   background-color: $third_color;
   color: white;
   font-weight: bold;
-  border-radius: 10px;
+  border-radius: 5px;
   margin-top: 45px;
   margin-bottom: 20px;
+}
+
+@mixin btn_img {
+  width: 17px;
+  vertical-align: middle;
+  margin-right: 5px;
 }
 
 @mixin section_main {
